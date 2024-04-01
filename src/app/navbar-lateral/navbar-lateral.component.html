@@ -1,0 +1,72 @@
+<div class="navbar-wrapper" style="position: relative; z-index: 1002;">
+    <div class="hamburger" (click)="toggleMenu()">&#9776;</div>
+</div>
+<div class="navbar">
+
+    <ul class="nav-links" [class.active]="isMenuVisible">
+
+        <div class="sidebar-header titulo-header">
+            <h3>Bottom Line</h3>
+        </div>
+
+        <div class="sidebar-header">
+            <h3>Menu</h3>
+        </div>
+
+        <div class="blockLink" routerLink="/home">
+            <img src="../../assets/Img/Navbar/hogar.png" alt="Dashboard" class="icon">
+            <li>Home</li>
+        </div>
+
+        <div class="blockLink" routerLink="/perfil">
+            <img src="../../assets/Img/Navbar/empresario.png" alt="Dashboard" class="icon">
+            <li>Perfil</li>
+        </div>
+
+        <div class="blockLink" routerLink="/precios">
+            <img src="../../assets/Img/Navbar/signo-de-dolar.png" alt="Dashboard" class="icon">
+            <li>Precios</li>
+        </div>
+
+        <div class="sidebar-header servicios-header">
+            <h3>Servicios</h3>
+        </div>
+
+        <div class="blockLink" routerLink="/empleados">
+            <img src="../../assets/Img/Navbar/empleo.png" alt="Dashboard" class="icon">
+            <li>Empleados</li>
+        </div>
+
+        <div class="blockLink" routerLink="/analisis">
+            <img src="../../assets/Img/Navbar/investigacion.png" alt="Dashboard" class="icon">
+            <li>Anáisis</li>
+        </div>
+
+        <div class="blockLink" routerLink="/inventario">
+            <img src="../../assets/Img/Navbar/inventario.png" alt="Dashboard" class="icon">
+            <li>Inventario</li>
+        </div>
+
+        <div class="blockLink" routerLink="/nomina">
+            <img src="../../assets/Img/Navbar/presupuesto.png" alt="Dashboard" class="icon">
+            <li>Nómina</li>
+        </div>
+
+        <div class="blockLink" routerLink="/ventas">
+            <img src="../../assets/Img/Navbar/ventas.png" alt="Dashboard" class="icon">
+            <li>Ventas</li>
+        </div>
+
+        <div class="blockLink" routerLink="/gestioncontable">
+            <img src="../../assets/Img/Navbar/administracion.png" alt="Dashboard" class="icon">
+            <li>Gestión Contable</li>
+        </div>
+
+        <div class="blockLink cerrar-sesion" routerLink="/">
+            <img src="../../assets/Img/Navbar/cerrar-sesion (1).png" alt="Dashboard" class="icon">
+            <li>Cerrar Sesión</li>
+        </div>
+
+    </ul>
+
+</div>
