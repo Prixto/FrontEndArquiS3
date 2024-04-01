@@ -79,3 +79,12 @@ p{
 input, button{
     font-family: 'Roboto Condensed', sans-serif;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.blur-background {
+    filter: blur(2px); /* Ajusta el nivel de desenfoque según prefieras */
+    -webkit-filter: blur(2px); /* Ajusta el nivel de desenfoque según prefieras */
+
+}
+

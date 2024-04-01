@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.modal-content {
+    position: fixed; /* Asegura que el modal se posicione de manera absoluta respecto al viewport */
+    top: 50%; /* Centra el modal verticalmente */
+    left: 50%; /* Centra el modal horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la transformación para centrar exactamente el modal */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    z-index: 1050; /* Debería ser suficiente para estar sobre otros elementos, asumiendo que no hay valores más altos en otros elementos */
+    background-color: #fff; /* Ajusta el color de fondo del modal */
+    padding: 20px; /* Ajusta el espacio interno del modal */
+    border-radius: 10px; /* Ajusta el radio de las esquinas del modal */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra suave alrededor del modal */
+    width: 50vw;
+    height: 50vh;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+.product-image {
+    max-width: 50%;
+    min-width: 50%;
+    margin-right: 20px;
+}
+
+.product-details {
+    max-width: 400px;
+}
+
+.product-details h2 {
+    margin: 0;
+    color: #000000;
+    font-size: 24px;
+}
+
+.product-details p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.product-details h3 {
+    margin: 5px 0;
+    color: #000000;
+    font-size: 18px;
+}
+
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: #000000;
+}
