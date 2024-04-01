@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+.app-layout {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  padding: 10px;
+}
+
+.app-layout app-navbar-lateral {
+  flex: 0 0 16%;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-layout .contenedor {
+  flex-grow: 1;
+}
+
+.contenedor {
+  height: 100vh;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.titulos {
+  margin-bottom: 20px;
+  display: flex;
+  width: 100%;
+}
+
+.titleColor {
+  color: #56bb91;
+  margin-left: 20px;
+}
+
+.pricingPage {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+.pricingOption {
+  background: #1e1e1e;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 10px;
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pricingOption.highlight {
+  border-color: #4caf50;
+}
+
+.price {
+  color: #fff;
+  margin: 0;
+  font-size: 32pt;
+  font-weight: 400;
+}
+
+.planName {
+  color: #fff;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #444;
+}
+
+.subscribeButton {
+  margin-top: auto;
+  background-color: #3ec0a0;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 60%;
+  font-size: 14pt;
+  margin: 0 auto;
+}
+
+.subscribeButton:hover {
+  background-color: #369b47;
+}
+
+.parrafo {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto; /* Para Safari */
+  -moz-hyphens: auto; /* Para Firefox */
+  -ms-hyphens: auto; /* Para Internet Explorer/Edge */
+  color: #3fbfa0;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+/* Agrega estilos para la responsividad si es necesario */
+@media (max-width: 768px) {
+  .pricingPage {
+    flex-direction: column;
+  }
+
+  .pricingOption {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-layout {
+    flex-direction: column; /* Cambia la dirección del flex a columna */
+    align-items: stretch; /* Alinea los elementos para que ocupen todo el ancho */
+  }
+
+  .app-layout app-navbar-lateral {
+    width: 100%; /* Asegúrate de que el navbar lateral ocupe el 100% del ancho */
+    flex: 0 0 auto; /* Esto permite que el navbar lateral ajuste su altura automáticamente basado en su contenido */
+  }
+
+  .app-layout .contenedor {
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    padding: 10px; /* Ajusta el padding según necesites */
+  } 
+
+  .titulos {
+    flex-direction: column; /* Cambia la dirección del flex a columna */
+    text-align: left;
+    margin-top: 30px; /* Ajusta el margen superior según necesites */
+  }
+
+  .titleColor {
+    margin-left: 0; /* Ajusta el margen izquierdo según necesites */
+    margin-top: -20px; /* Ajusta el margen superior según necesites */
+  }
+
+}

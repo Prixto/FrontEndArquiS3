@@ -1,1 +1,82 @@
-<p>precios works!</p>
+<div class="app-layout">
+    <app-navbar-lateral></app-navbar-lateral>
+    <div class="contenedor">
+        <div class="titulos">
+            <h1>Tienda</h1>
+            <h1 class="titleColor">Planes</h1>
+        </div>
+
+        <section class="plans">
+            <div class="pricingPage">
+                <div class="pricingOption basic">
+                    <h2 class="price">$0.00</h2>
+                    <h3 class="planName">Básico - Plan de Cuenta</h3>
+                    <p class="parrafo">
+                        Prueba gratis de nuestros servicios Gold por un mes completo:
+                    </p>
+
+                    <ul class="parrafo">
+                        <li>Nomina</li>
+                        <li>Inventario</li>
+                        <li>Análisis</li>
+                        <li>5+ Usuario</li>
+                    </ul>
+
+                    <p class="parrafo">
+                        Tenga en cuenta que de no cambiar de plan de pago en el plazo acordado de un mes, el progreso
+                    </p>
+
+                    <button class="subscribeButton" (click)="pagarMensualidad()">
+                        Pagar Mensualidad
+                    </button>
+                </div>
+
+                <div class="pricingOption silver">
+                    <h2 class="price">$25.00</h2>
+                    <h3 class="planName">SILVER</h3>
+                    <p class="parrafo">
+                        El plan de gestión "Silver" tiene diferentes módulos para ofrecer:
+                    </p>
+
+                    <ul class="parrafo">
+                        <li>Nomina</li>
+                        <li>Inventario</li>
+                        <li>Análisis</li>
+                    </ul>
+
+                    <p class="parrafo">
+                        La actualización del plan puede darse en cualquier punto con esta misma página.
+                    </p>
+
+                    <button class="subscribeButton" (click)="pagarMensualidad()">
+                        Pagar Mensualidad
+                    </button>
+                </div>
+
+                <div class="pricingOption gold">
+                    <h2 class="price">$50.00</h2>
+                    <h3 class="planName">GOLD</h3>
+
+                    <p class="parrafo">
+                        Prueba gratis de nuestros servicios Gold por un mes completo:
+                    </p>
+
+                    <ul class="parrafo">
+                        <li>Nomina</li>
+                        <li>Inventario</li>
+                        <li>Análisis</li>
+                        <li>5+ Usuario</li>
+                    </ul>
+
+                    <p class="parrafo">
+                        Tenga en cuenta que de no cambiar de plan de pago en el plazo acordado de un mes, el progreso
+                    </p>
+                    <button class="subscribeButton" (click)="pagarMensualidad()">
+                        Pagar Mensualidad
+                    </button>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
