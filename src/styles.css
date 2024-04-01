@@ -53,6 +53,8 @@ body, html{
     scroll-behavior: smooth; 
     background: linear-gradient(120deg, #eeeeee 50%, #56BB91 40%);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;    
 }
 
 h1, button{
