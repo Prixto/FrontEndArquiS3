@@ -1,0 +1,220 @@
+.app-layout {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  padding: 10px;
+}
+
+.app-layout app-navbar-lateral {
+  flex: 0 0 16%;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-layout .contenedor {
+  flex-grow: 1;
+}
+
+.contenedor {
+  height: 100vh;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.titulos {
+  margin-bottom: 20px;
+  display: flex;
+  width: 100%;
+}
+
+.titleColor {
+  color: #56bb91;
+  margin-left: 10px;
+}
+
+.search {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.search input {
+  width: 30%;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.blockCards {
+  display: flex;
+  margin-left: 40px;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-bottom: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* card */
+
+.card {
+  display: flex;
+  align-items: center;
+  width: 75vw;
+  max-width: 430px;
+  padding: 50px 30px 50px 20px;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card img {
+  min-width: 170px;
+  height: 220px;
+  object-fit: cover;
+  margin-left: -60px;
+  margin-right: 40px;
+  border-radius: inherit;
+}
+
+.card h2 {
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.card h3 {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.5;
+  margin: 0 0 20px;
+}
+
+.card p {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(0 0 0 / 70%);
+  margin-bottom: 24px;
+}
+
+.card .buttons {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.card button {
+  border: 1px solid #a7a7a7;
+  background: transparent;
+  color: #a7a7a7;
+  font-family: inherit;
+  padding: 16px 20px;
+  font-size: 18px;
+  border-radius: 6px;
+  min-width: 120px;
+}
+
+.card button.primary {
+  background: #fe5c89;
+  color: #f9f9f9;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .app-layout {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .app-layout app-navbar-lateral {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  .app-layout .contenedor {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .titulos {
+    flex-direction: column;
+    text-align: left;
+    margin-top: 40px;
+  }
+
+  .titleColor {
+    margin-left: 0;
+    margin-top: -20px;
+  }
+
+  .search {
+    margin-bottom: 80px;
+  }
+
+  .search input {
+    width: 100%;
+  }
+
+  /* card */
+  .card {
+    margin: 0 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .card h2 {
+    font-size: 30px;
+  }
+
+  .card img {
+    margin: -100px 0 30px 0;
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  .card .stats var {
+    min-width: 90px;
+  }
+
+  .card button {
+    min-width: 160px;
+  }
+
+  .blockCards {
+    margin-left: 0;
+    justify-content: center;
+  }
+}
+
+.card .stats {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0 0 24px;
+  padding: 0;
+}
+
+.card .stats var {
+  display: block;
+  font-style: normal;
+  font-size: 14pt;
+  font-weight: 500;
+  text-align: center;
+}
+
+.card .stats label {
+  opacity: 0.5;
+  font-size: 10pt;
+  font-weight: 400;
+  text-align: center;
+}

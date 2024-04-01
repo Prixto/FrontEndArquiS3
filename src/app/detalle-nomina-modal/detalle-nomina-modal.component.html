@@ -1,0 +1,24 @@
+<div class="modal-container">
+    <img [src]="data.empleado.imagenURL" alt="Foto del empleado" class="empleado-imagen">
+    <div class="empleado-info">
+        <h2>{{data.empleado.nombre}} {{data.empleado.apellido}}</h2>
+        <p><strong>Cargo:</strong> {{data.empleado.cargo}}</p>
+        <p><strong>Salario:</strong> {{data.empleado.salario }}</p>
+        <p><strong>Fecha de Ingreso:</strong> {{data.empleado.fechaIngreso }}</p>
+        <p><strong>Neto a Pagar:</strong> {{data.empleado.netoPagar }}</p>
+
+        <!--auxilioTransporte, horasExtras, totaldevengado, salud, pension, cajaCompensacion, totalDeducciones-->
+        <p><strong>Auxilio de Transporte:</strong> {{data.empleado.auxilioTransporte }}</p>
+        <p><strong>Horas Extras:</strong> {{data.empleado.horasExtras }}</p>
+        <p><strong>Total Devengado:</strong> {{data.empleado.totaldevengado }}</p>
+        <p><strong>Salud:</strong> {{data.empleado.salud }}</p>
+        <p><strong>Pensión:</strong> {{data.empleado.pension }}</p>
+        <p><strong>Caja de Compensación:</strong> {{data.empleado.cajaCompensacion }}</p>
+        <p><strong>Total Deducciones:</strong> {{data.empleado.totalDeducciones }}</p>
+        
+
+
+    </div>
+    <img src="../../assets/Img/Otros/cerrar.png" alt="Cerrar" class="close-icon" (click)="dialogRef.close()" />
+
+</div>

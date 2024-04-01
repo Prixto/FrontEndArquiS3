@@ -1,21 +1,21 @@
 .modal-container {
-  position: fixed; /* Asegura que el modal se posicione de manera absoluta respecto al viewport */
-  top: 50%; /* Centra el modal verticalmente */
-  left: 50%; /* Centra el modal horizontalmente */
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
   transform: translate(
     -50%,
     -50%
-  ); /* Ajusta la transformación para centrar exactamente el modal */
+  ); 
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: left;
-  z-index: 1050; /* Debería ser suficiente para estar sobre otros elementos, asumiendo que no hay valores más altos en otros elementos */
-  background-color: #fff; /* Ajusta el color de fondo del modal */
-  padding: 20px; /* Ajusta el espacio interno del modal */
-  border-radius: 10px; /* Ajusta el radio de las esquinas del modal */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra suave alrededor del modal */
+  z-index: 1050;
+  background-color: #fff; 
+  padding: 20px; 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
   width: 30vw;
   height: auto;
   font-family: "Be Vietnam Pro", sans-serif;
@@ -26,7 +26,7 @@
 
 .empleado-imagen {
   width: 100%;
-  max-width: 350px; /* Ajusta el tamaño como prefieras */
+  max-width: 350px; 
   height: auto;
   border-radius: 10px;
   margin-bottom: 20px;
