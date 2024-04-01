@@ -11,7 +11,7 @@
                 <h1>$ 210.00</h1>
                 <button class="order-detail">Compra</button>
             </div>
-            <form class="payment-form">
+            <form class="payment-form" (submit)="comprar($event)">
 
                 <div class="payment-method">
                     <input type="radio" id="credit-card" name="payment" checked>
@@ -57,7 +57,7 @@
 
                 <div class="pse-info">Sera redirigido a pse</div>
 
-                <button type="submit" class="place-order">Terminar</button>
+                <button type="submit" class="place-order" >Terminar</button>
             </form>
         </div>
 

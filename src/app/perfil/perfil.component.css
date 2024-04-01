@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+.app-layout {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  padding: 10px;
+}
+
+.app-layout app-navbar-lateral {
+  flex: 0 0 16%;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-layout .contenedor {
+  flex-grow: 1;
+}
+
+.contenedor {
+  height: 100vh;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.titulos {
+  display: flex;
+  width: 100%;
+  flex: 1 1 100%;
+}
+
+.titulos h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.titleColor {
+  color: #56bb91;
+  margin-left: 10px;
+}
+
+.block {
+  width: 79vw;
+  height: 93vh;
+  background-color: #eee;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 35px;
+  padding: 30px;
+}
+
+.block .block-part-one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+  border-bottom: 2px solid #000000;
+  max-height: 22vh;
+}
+
+.block .blockImg img{
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.blockInfoBasica {
+  max-width: 30vw;
+  height: 18vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+.infoBasica{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.infoBasicaItem {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.infoBasicaItem h2{
+    margin-right: 10px;   
+    font-weight: 500; 
+}
+
+.infoBasicaItem p{
+    margin-right: 10px;     
+    font-weight: 400;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.infoBasicaItem img{
+    width: 30px;
+    height: 30px;
+}
+
+.blockImg{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.servicio{
+    margin-top: -5px;
+    /* color oro */
+    color: #FFD700;
+    /* sombra */
+    text-shadow: 2px 2px 2px #000000;
+
+}
+
+
+
+/* Agrega estilos para la responsividad si es necesario */
+@media (max-width: 768px) {
+  .pricingPage {
+    flex-direction: column;
+  }
+
+  .pricingOption {
+    margin-bottom: 20px;
+  }
+
+  .app-layout {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .app-layout app-navbar-lateral {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  .app-layout .contenedor {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .titulos {
+    flex-direction: column;
+    text-align: left;
+    margin-top: 30px;
+  }
+}

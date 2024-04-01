@@ -1,1 +1,48 @@
-<p>perfil works!</p>
+<div class="app-layout">
+    <app-navbar-lateral></app-navbar-lateral>
+    <div class="contenedor">
+
+        <div class="block">
+            <div class="block-part-one">
+
+
+
+                <div class="blockInfoBasica">
+                    <div class="titulos">
+                        <h1>Configuración </h1>
+                        <h1 class="titleColor">Perfil</h1>
+                    </div>
+
+                    <div class="infoBasica">
+                        <div class="infoBasicaItem">
+                            <h2>Nombre:</h2>
+                            <p>{{nombre}} {{apellido}} </p>
+                        </div>
+                        <div class="infoBasicaItem">
+                            <h2>Correo:</h2>
+                            <p> {{correo}}</p>
+                        </div>
+
+                        <div class="infoBasicaItem">
+                            <h2>Num. Identifiacion:</h2>
+                            <p>{{numeroidentificacion}}</p>
+                        </div>
+
+                        <div class="infoBasicaItem">
+                            <img src="../../assets/Img/Otros/editar.png" alt="editar">
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="blockImg">
+                    <img src="../../assets/Img/Navbar/empresario.png" alt="Imagen de perfil">
+                    <h1 class="servicio">{{tiposervicio}}</h1>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
