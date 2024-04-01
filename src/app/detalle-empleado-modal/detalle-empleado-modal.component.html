@@ -1,0 +1,12 @@
+<div class="modal-container">
+    <img [src]="data.empleado.imagenURL" alt="Foto del empleado" class="empleado-imagen">
+    <div class="empleado-info">
+      <h2>{{data.empleado.nombre}} {{data.empleado.apellido}}</h2>
+      <p><strong>Cargo:</strong> {{data.empleado.cargo}}</p>
+      <p><strong>Salario:</strong> {{data.empleado.salario }}</p>
+      <p><strong>Fecha de Ingreso:</strong> {{data.empleado.fechaIngreso }}</p>
+    </div>
+    <img src="../../assets/Img/Otros/cerrar.png" alt="Cerrar" class="close-icon" (click)="dialogRef.close()" />
+
+  </div>
+  
