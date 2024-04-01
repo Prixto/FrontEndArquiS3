@@ -5,12 +5,12 @@ import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-precios',
+  selector: 'app-pasarela-pagos',
   standalone: true,
   imports: [NavbarLateralComponent, CommonModule, RouterLink],
-  templateUrl: './precios.component.html',
-  styleUrl: './precios.component.css'
+  templateUrl: './pasarela-pagos.component.html',
+  styleUrl: './pasarela-pagos.component.css'
 })
-export class PreciosComponent {
+export class PasarelaPagosComponent {
 
 }

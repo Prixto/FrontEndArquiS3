@@ -12,6 +12,7 @@ import { NominaComponent } from './nomina/nomina.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { PreciosComponent } from './precios/precios.component';
 import { VentasComponent } from './ventas/ventas.component';
+import { PasarelaPagosComponent } from './pasarela-pagos/pasarela-pagos.component';
 
 export const routes: Routes = [
 
@@ -50,11 +51,15 @@ export const routes: Routes = [
     }
     ,
     {
-        path: 'precios', component: PreciosComponent
+        path: 'precios', component: PreciosComponent        
     }
     ,
     {
         path: 'ventas', component: VentasComponent
+    }
+    ,
+    {
+        path: 'pasarela-pagos', component: PasarelaPagosComponent
     }
     
 ];

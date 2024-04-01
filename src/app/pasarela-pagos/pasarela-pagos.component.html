@@ -1,0 +1,67 @@
+<div class="app-layout">
+    <app-navbar-lateral></app-navbar-lateral>
+    <div class="contenedor">
+        <div class="titulos">
+            <h1>Metodo de</h1>
+            <h1 class="titleColor">Pago</h1>
+        </div>
+
+        <div class="payment-container">
+            <div class="payment-amount">
+                <h1>$ 210.00</h1>
+                <button class="order-detail">Compra</button>
+            </div>
+            <form class="payment-form">
+
+                <div class="payment-method">
+                    <input type="radio" id="credit-card" name="payment" checked>
+                    <label for="credit-card">Credit/Debit Card</label>
+                    <img src="../../assets/Img/Otros/visa.png" alt="Visa" class="payment-icon">
+                    <img src="../../assets/Img/Otros/master.png" alt="MasterCard" class="payment-icon">
+                </div>
+
+                <div class="input-row">
+                    <div class="input-wrapper">
+                        <label for="card-number">Numero de la tarjeta</label>
+                        <input type="text" id="card-number" placeholder="XXXX XXXX XXXX XXXX">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="card-name">Nombre del propietario</label>
+                        <input type="text" id="card-name" placeholder="Name on Card">
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-wrapper">
+                        <label for="card-expiry">Fecha Vencimiento</label>
+                        <input type="text" id="card-expiry" placeholder="MM/YY">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="card-cvv">CVV</label>
+                        <input type="text" id="card-cvv" placeholder="XXX">
+                    </div>
+                </div>
+
+                <div class="save-card">
+                    <input type="checkbox" id="save-card">
+                    <label for="save-card">Guarda tus datos</label>
+                </div>
+
+                <div class="payment-method">
+                    <input type="radio" id="pse" name="payment">
+                    <label for="pse">PSE</label>
+                    <img src="../../assets/Img/Otros/pse.png" alt="pse" class="payment-icon">
+                </div>
+
+                <div class="pse-info">Sera redirigido a pse</div>
+
+                <button type="submit" class="place-order">Terminar</button>
+            </form>
+        </div>
+
+
+
+    </div>
+</div>
