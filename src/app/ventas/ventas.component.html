@@ -3,9 +3,79 @@
     <div class="contenedor">
 
         <div class="titulos">
-            <h1>Bienvenida</h1>
+            <h1>Información de</h1>
             <h1 class="titleColor">Ventas</h1>
         </div>
 
+        <div class="Blocks">
+
+            <a class="relative block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out"
+                style="height: 120px;"> <!-- Asegúrate de tener suficiente altura para mostrar todos los elementos -->
+                <img src="../../assets/Img/Otros/negocios-y-finanzas.png" alt="Negocios y finanzas"
+                    class="absolute -top-6 left-6 h-16 w-16" style="margin-top: 5px;">
+                <!-- Usa Tailwind para estilos de fondo y bordes -->
+                <div class="flex justify-end items-start h-full">
+                    <div class="pt-6 pr-6"> <!-- Alinea el texto a la derecha y añade padding para posicionarlo -->
+                        <div class="dos" style="margin-top: -40px; margin-right: -30px;">
+                            <div class="text-sm font-medium text-gray-500">Dinero hoy</div>
+                            <div class="text-lg font-bold text-gray-900">$53k</div>
+                        </div>
+                        <div class="text-xs font-medium text-green-500 absolute bottom-6 left-6">+55% que la semana pasada
+                        </div> <!-- Posiciona el texto verde en la esquina inferior izquierda -->
+                    </div>
+                </div>
+            </a>
+
+            <a class="relative block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out"
+                style="height: 120px;"> <!-- Asegúrate de tener suficiente altura para mostrar todos los elementos -->
+                <img src="../../assets/Img/Navbar/empresario.png" alt="Negocios y finanzas"
+                    class="absolute -top-6 left-6 h-16 w-16" style="margin-top: 5px;">
+                <!-- Usa Tailwind para estilos de fondo y bordes -->
+                <div class="flex justify-end items-start h-full">
+                    <div class="pt-6 pr-6"> <!-- Alinea el texto a la derecha y añade padding para posicionarlo -->
+                        <div class="dos" style="margin-top: -40px; margin-right: -30px;">
+                            <div class="text-sm font-medium text-gray-500">Usuarios</div>
+                            <div class="text-lg font-bold text-gray-900">85</div>
+                        </div>
+                        <div class="text-xs font-medium text-green-500 absolute bottom-6 left-6">+5% que la semana pasada
+                        </div> <!-- Posiciona el texto verde en la esquina inferior izquierda -->
+                    </div>
+                </div>
+            </a>
+
+
+            <a class="relative block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out"
+                style="height: 120px;"> <!-- Asegúrate de tener suficiente altura para mostrar todos los elementos -->
+                <img src="../../assets/Img/Navbar/presupuesto.png" alt="Negocios y finanzas"
+                    class="absolute -top-6 left-6 h-16 w-16" style="margin-top: 5px;">
+                <!-- Usa Tailwind para estilos de fondo y bordes -->
+                <div class="flex justify-end items-start h-full">
+                    <div class="pt-6 pr-6"> <!-- Alinea el texto a la derecha y añade padding para posicionarlo -->
+                        <div class="dos" style="margin-top: -40px; margin-right: -30px;">
+                            <div class="text-sm font-medium text-gray-500">Ventas hoy</div>
+                            <div class="text-lg font-bold text-gray-900">12</div>
+                        </div>
+                        <div class="text-xs font-medium text-green-500 absolute bottom-6 left-6">+10% mas que ayer
+                        </div> <!-- Posiciona el texto verde en la esquina inferior izquierda -->
+                    </div>
+                </div>
+            </a>
+
+            <a
+                class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Reportes</h5>
+
+                <div class="graficos-contenedor">
+                    <div class="contenedor-grafico">
+                        <canvas id="miGrafico"></canvas>
+                    </div>
+
+                    <div class="contenedor-grafico">
+                        <canvas id="miGrafico1"></canvas>
+                    </div>
+                </div>
+            </a>
+
+        </div>
     </div>
 </div>
