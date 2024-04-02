@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .app-layout {
   display: flex;
@@ -22,123 +22,127 @@
   padding: 40px;
 }
 
+
 h1 {
   font-size: 2.5rem;
+  font-weight: 500;
 }
 
 .titulos {
+  margin-bottom: 20px;
   display: flex;
   width: 100%;
-  flex: 1 1 100%;
-}
-
-.titulos h1 {
-    margin: 0;
-    padding: 0;
 }
 
 .titleColor {
   color: #56bb91;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
-.block {
-  width: 79vw;
-  height: 93vh;
-  background-color: #eee;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  border-radius: 35px;
-  padding: 30px;
-}
-
-.block .block-part-one {
+.Blocks {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  padding-bottom: 50px;
-  border-bottom: 2px solid #000000;
-  max-height: 22vh;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 100px;
 }
 
-.block .blockImg img{
-  width: 150px;
+.Blocks a:nth-child(1) {
+  flex-basis: 30%;
+  max-width: 30%;
+  margin: 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Blocks a {
+  min-width: calc(50% - 20px);
   height: auto;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  padding: 10px;
-  margin-right: 20px;
 }
 
-.blockInfoBasica {
-  max-width: 30vw;
-  height: 18vh;
+
+
+
+.Blocks {
+  margin-bottom: 20px;
+}
+
+
+.graficos-contenedor {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 30vh;
+}
+
+.contenedor-grafico {
+  max-width: calc(50% - 10px);
+  flex: 1;
+  height: 30vh;
+
+}
+
+.lista-informacion li {
+  padding: 8px;
+}
+
+.calendar-icon {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.calendar-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #4f46e5;
+  color: #4f46e5;
+  width: 80px;
+  height: 80px;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+/*
+.days-remaining {
+  color: #6b7280;
+  margin-bottom: 1rem; 
+}*/
+
+.renew-button {
+  background-color: #4f46e5;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 9999px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.renew-button:hover {
+  background-color: #3730a3;
+}
+
+.suscipcion {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; 
-}
 
-.infoBasica{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.infoBasicaItem {
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
-}
-
-.infoBasicaItem h2{
-    margin-right: 10px;   
-    font-weight: 500; 
-}
-
-.infoBasicaItem p{
-    margin-right: 10px;     
-    font-weight: 400;
-}
-
-p{
-    margin: 0;
-    padding: 0;
-}
-
-.infoBasicaItem img{
-    width: 30px;
-    height: 30px;
-}
-
-.blockImg{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.servicio{
-    margin-top: -5px;
-    /* color oro */
-    color: #FFD700;
-    /* sombra */
-    text-shadow: 2px 2px 2px #000000;
-
+  margin-bottom: 1rem;
 }
 
 
-
-/* Agrega estilos para la responsividad si es necesario */
 @media (max-width: 768px) {
-  .pricingPage {
-    flex-direction: column;
-  }
-
-  .pricingOption {
-    margin-bottom: 20px;
-  }
-
   .app-layout {
     flex-direction: column;
     align-items: stretch;
@@ -154,9 +158,33 @@ p{
     padding: 10px;
   }
 
+  .Blocks a,
+  .contenedor-grafico {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+
+  .graficos-contenedor {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .contenedor-grafico {
+    height: auto;
+  }
+
   .titulos {
     flex-direction: column;
     text-align: left;
-    margin-top: 30px;
+    margin-top: 40px;
+  }
+
+  .titleColor {
+    margin-left: 0;
+    margin-top: -20px;
+  }
+
+  .Blocks {
+    margin-bottom: 40px;
   }
 }

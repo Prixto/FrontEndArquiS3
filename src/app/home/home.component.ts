@@ -1,9 +1,9 @@
-import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { CommonModule } from '@angular/common';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { NavbarLateralComponent } from '../navbar-lateral/navbar-lateral.component';
 import { Chart, registerables } from 'chart.js';
-  
+import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
+
 
 @Component({
   selector: 'app-home',
@@ -15,15 +15,15 @@ import { Chart, registerables } from 'chart.js';
 export class HomeComponent {
   nombre = " Luna";
 
-  constructor() {
-    // Registra todos los elementos necesarios para el gráfico
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
     Chart.register(...registerables);
-
   }
 
   ngOnInit(): void {
-    this.crearGrafico();
-    this.crearGrafico1();
+    if (isPlatformBrowser(this.platformId)) {
+      this.crearGrafico();
+      this.crearGrafico1();
+    }
   }
 
   crearGrafico(): void {

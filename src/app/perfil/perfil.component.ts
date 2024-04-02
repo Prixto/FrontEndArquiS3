@@ -18,5 +18,7 @@ export class PerfilComponent {
     apellido = "Mendez";
     correo = "prueba@gmail.com";
     tiposervicio = "Gold";
+    telefono = "3147368101";
+    fechaNacimiento = "1999-12-12";
 
 }

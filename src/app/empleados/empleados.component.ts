@@ -1,15 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavbarLateralComponent } from '../navbar-lateral/navbar-lateral.component';
-import { MatDialog, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
-import { DetalleProductoModalComponent } from '../detalle-producto-modal/detalle-producto-modal.component';
 import { FormsModule } from '@angular/forms';
-import { DetalleEmpleadoModalComponent } from '../detalle-empleado-modal/detalle-empleado-modal.component';
 
 @Component({
   selector: 'app-empleados',
   standalone: true,
-  imports: [CommonModule, NavbarLateralComponent, MatDialogModule, FormsModule],
+  imports: [CommonModule, NavbarLateralComponent, FormsModule],
   templateUrl: './empleados.component.html',
   styleUrl: './empleados.component.css'
 })
@@ -74,18 +71,8 @@ export class EmpleadosComponent {
     },
   ];
 
-  constructor(public dialog: MatDialog) { }
+  constructor() { }
 
-  onMostrarMas(empleado: any): void {
-    const dialogRef = this.dialog.open(DetalleEmpleadoModalComponent, {
-      data: { empleado: empleado },
-      disableClose: false
-    });
-    document.getElementById('app-layout')?.classList.add('blur-background');
-    dialogRef.afterClosed().subscribe(() => {
-      document.getElementById('app-layout')?.classList.remove('blur-background');
-    });
-  }
 
   get empleadosFiltrados() {
     return this.filtrarEmpleados(this.busqueda);
