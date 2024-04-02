@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavbarLateralComponent } from '../navbar-lateral/navbar-lateral.component';
-import { MatDialog, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
-import { DetalleProductoModalComponent } from '../detalle-producto-modal/detalle-producto-modal.component';
 import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-inventario',
   standalone: true,
-  imports: [CommonModule, NavbarLateralComponent, MatDialogModule, FormsModule],
+  imports: [CommonModule, NavbarLateralComponent, FormsModule],
   templateUrl: './inventario.component.html',
   styleUrl: './inventario.component.css'
 })
@@ -70,18 +68,7 @@ export class InventarioComponent {
   ngOnInit(): void {
   }
 
-  constructor(private dialog: MatDialog) { }
-
-  onMostrarMas(producto: any): void {
-    const dialogRef = this.dialog.open(DetalleProductoModalComponent, {
-      data: { producto: producto },
-      disableClose: false 
-    });  
-    document.getElementById('app-layout')?.classList.add('blur-background');  
-    dialogRef.afterClosed().subscribe(() => {
-      document.getElementById('app-layout')?.classList.remove('blur-background');
-    });
-  }
+  constructor() { }
 
   get productosFiltrados() {
     return this.busqueda ? this.filtrarProductos(this.busqueda) : this.productos;

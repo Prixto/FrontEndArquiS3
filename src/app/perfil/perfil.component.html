@@ -1,1 +1,93 @@
-<p>perfil works!</p>
+<div class="app-layout">
+    <app-navbar-lateral></app-navbar-lateral>
+    <div class="contenedor">
+        <!--
+            <div class="titulos">
+                <h1>Bienvenida</h1>
+                <h1 class="titleColor">{{nombre}}!</h1>
+            </div>
+        -->
+
+        <div class="Blocks">
+
+            <a 
+                class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <img src="../../assets/Img/Navbar/empresario.png" alt="Inventario"
+                    class="w-40 h-40 object-cover mx-auto mb-2">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                    style="font-size: 1.6rem; margin-bottom: 20px;"> {{nombre}} {{apellido}}</h5>
+                <!--texto grande en dorado-->
+                <h5 class="mb-2 text-2xl font-bold tracking-tight dark:text-white"
+                    style="color: #ffd700; font-size: 2rem;">{{tiposervicio}}</h5>
+            </a>
+
+            <a 
+                class="block max-w-sm p-6 bg-white border-2 border-gray-200 rounded-xl shadow-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 relative overflow-hidden">
+                <h5 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">Información</h5>
+                <!--lista de informacion -->
+                <ul class="lista-informacion text-sm mb-8 space-y-2">
+                    <li class="border-b-2 border-gray-200 pb-2 dark:border-gray-700 flex justify-between items-center">
+                        <span class="font-semibold">Nombre Completo:</span>
+                        <span>{{nombre}}</span>
+                    </li>
+                    <li class="border-b-2 border-gray-200 pb-2 dark:border-gray-700 flex justify-between items-center">
+                        <span class="font-semibold">Correo Electrónico:</span>
+                        <span>{{correo}}</span>
+                    </li>
+                    <li class="border-b-2 border-gray-200 pb-2 dark:border-gray-700 flex justify-between items-center">
+                        <span class="font-semibold">Teléfono:</span>
+                        <span>{{telefono}}</span>
+                    </li>
+                    <li class="border-b-2 border-gray-200 pb-2 dark:border-gray-700 flex justify-between items-center">
+                        <span class="font-semibold">Fecha de Nacimiento:</span>
+                        <span>{{fechaNacimiento}}</span>
+                    </li>
+                    <li class="border-b-2 border-gray-200 pb-2 dark:border-gray-700 flex justify-between items-center">
+                        <span class="font-semibold">Número de Identificación:</span>
+                        <span>{{numeroidentificacion}}</span>
+                    </li>
+                </ul>
+                <img src="../../assets/Img/Otros/editar.png" alt="Editar" class="absolute bottom-0 right-0 mb-6 mr-6"
+                    style="width: 30px; margin: 20px;">
+
+            </a>
+
+
+            <a 
+                class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 relative">
+
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Servicios</h5>
+
+
+                <img src="../../assets/Img/Otros/editar.png" alt="Editar" class="absolute bottom-0 right-0"
+                    style="width: 30px; margin: 20px;">
+            </a>
+
+            <a 
+                class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Dias restantes</h5>
+
+                <!-- 
+
+                    <div class="circle-container mt-4">
+                        <div class="days-circle bg-blue-500 dark:bg-blue-700 text-white flex items-center justify-center rounded-full">
+                            <span class="text-xl font-semibold">30 </span> días
+                        </div>
+                    </div>
+                -->
+                <div class="suscipcion">
+                    <div class="calendar-icon">
+                        <span class="calendar-number">30</span>
+                    </div>
+                    <!--
+                    <p class="days-remaining">Días restantes</p>
+                    -->
+                    <button class="renew-button">Renovar</button>
+                </div>
+            </a>
+
+
+
+        </div>
+    </div>
+</div>

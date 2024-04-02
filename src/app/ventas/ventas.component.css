@@ -1,0 +1,38 @@
+.app-layout {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding: 10px;
+}
+
+.app-layout app-navbar-lateral {
+    flex: 0 0 16%;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-layout .contenedor {
+    flex-grow: 1;
+}
+
+.contenedor {
+    height: 100vh;
+    padding: 40px;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.titulos {
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+}
+
+.titleColor {
+    color: #56bb91;
+    margin-left: 20px;
+}

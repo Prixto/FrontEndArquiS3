@@ -1,16 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavbarLateralComponent } from '../navbar-lateral/navbar-lateral.component';
-import { MatDialog, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
-import { DetalleProductoModalComponent } from '../detalle-producto-modal/detalle-producto-modal.component';
 import { FormsModule } from '@angular/forms';
-import { DetalleEmpleadoModalComponent } from '../detalle-empleado-modal/detalle-empleado-modal.component';
-import { DetalleNominaModalComponent } from '../detalle-nomina-modal/detalle-nomina-modal.component';
 
 @Component({
   selector: 'app-nomina',
   standalone: true,
-  imports: [CommonModule, NavbarLateralComponent, MatDialogModule, FormsModule],
+  imports: [CommonModule, NavbarLateralComponent, FormsModule],
   templateUrl: './nomina.component.html',
   styleUrl: './nomina.component.css'
 })
@@ -124,18 +120,7 @@ export class NominaComponent {
     
   ];
 
-  constructor(public dialog: MatDialog) { }
-
-  onMostrarMas(empleado: any): void {
-    const dialogRef = this.dialog.open(DetalleNominaModalComponent, {
-      data: { empleado: empleado },
-      disableClose: false
-    });
-    document.getElementById('app-layout')?.classList.add('blur-background');
-    dialogRef.afterClosed().subscribe(() => {
-      document.getElementById('app-layout')?.classList.remove('blur-background');
-    });
-  }
+  constructor() { }
 
   get empleadosFiltrados() {
     return this.filtrarEmpleados(this.busqueda);
