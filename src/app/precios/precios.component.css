@@ -91,10 +91,6 @@ h1 {
   margin: 0 auto;
 }
 
-.subscribeButton:hover {
-  background-color: #369b47;
-}
-
 .parrafo {
   text-align: justify;
   hyphens: auto;
