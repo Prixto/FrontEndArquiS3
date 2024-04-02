@@ -1,120 +1,139 @@
+.app-layout {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  padding: 10px;
+}
 
-.logo {
-    font-size: 24pt;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: #fff; /* Asegúrate de que los enlaces hereden este color */
-    text-decoration: none;
-    transition: 0.3s;
+.app-layout .contenedor {
+  flex-grow: 1;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  height: 100vh;
+  /*background-color: #f5f7fa; */
+}
+
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.titulos {
+  margin-bottom: 20px;
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.titleColor {
+  color: #56bb91;
+  margin-left: 20px;
+}
+
+
+.area-principal {
+  flex-basis: 50%;
+}
+
+.area-principal h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.area-principal p {
+  font-size: 1rem;
+  color: #414040;
+  margin-bottom: 20px;
+  font-weight: 600;
+
+}
+
+.area-principal button {
+  background-color: #2d9c71;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 350px ;
+  font-size: 14pt;
+}
+
+.area-principal button:hover {
+  background-color: #1e7d5b;
+  margin-left: 20px;
+}
+
+.titleColor {
+  color: #56bb91;
+}
+
+.area-visual {
+  flex-basis: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+@media (max-width: 768px) {
+  .app-layout {
+    flex-direction: column;
+    align-items: stretch;
   }
-  
-  .logo:hover {
-    opacity: 0.7;
+
+  .app-layout app-navbar-lateral {
+    width: 100%;
+    flex: 0 0 auto;
   }
-  
-  .nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    background: #56BB91;
-    height: 8vh;
+
+  .app-layout .contenedor {
+    width: 100%;
+    padding: 10px;
   }
-  
-  .main {
-    background: url("/bg.jpg") no-repeat center center;
-    background-size: cover;
-    height: 92vh;
+
+  .Blocks a,
+  .contenedor-grafico {
+    max-width: 100%;
+    flex-basis: 100%;
   }
-  
-  .navList {
-    list-style: none;
-    display: flex;
-    padding: 0;
+
+  .titulos {
+    flex-direction: column;
+    text-align: left;
+    margin-top: 40px;
   }
-  
-  .navList li {
-    letter-spacing: 3px;
-    margin-left: 32px;
+
+  .titleColor {
+    margin-left: 0;
+    margin-top: -20px;
   }
-  
-  .navList li a {
-    color: #fff; 
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 14pt;
-    cursor: pointer;
+
+
+  .contenedor {
+    flex-direction: column;
+    text-align: center;
   }
-  
-  .navList li a:hover {
-    opacity: 0.7;
-    transform: scale(1.5);
+
+  .area-principal,
+  .area-visual {
+    flex-basis: 100%;
   }
-  
-  
-  .mobileMenu {
-    display: none;
-    cursor: pointer;
+
+  .area-principal h1 {
+    font-size: 1.5rem;
+    /* Ajusta el tamaño del texto para pantallas más pequeñas */
   }
-  
-  .mobileMenu div {
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-    transition: 0.3s;
-  }
-  
-  @media (max-width: 999px) {
-    .navList {
-      position: absolute;
-      top: 8vh; 
-      right: 0;
-      width: 50vw;
-      height: 100vh; 
-      background: #23232e;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start; 
-      transform: translateX(100%);
-      transition: transform 0.3s ease-in;
-      padding: 0;
-    }
-  
-    .navList.active {
-      transform: translateX(0);
-    }
-  
-    .navList li {
-      height: 80px; 
-      margin-left: 0;
-      opacity: 1; 
-      width: 100%; 
-      display: flex;
-      align-items: center; 
-      justify-content: center; 
-      transition: opacity 0.5s ease, transform 0.5s ease;
-    }
-  
-    .mobileMenu {
-      display: block;
-    }
-  
-    .mobileMenu.active .line1 {
-      transform: rotate(-45deg) translate(-8px, 8px);
-    }
-  
-    .mobileMenu.active .line2 {
-      opacity: 0;
-    }
-  
-    .mobileMenu.active .line3 {
-      transform: rotate(45deg) translate(-5px, -7px);
-    }
-  }
-  
-  
-  
-  
-  
-  
+
+
+}

@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import Swal from "sweetalert2";
+import { NavbarSuperiorComponent } from '../navbar-superior/navbar-superior.component';
 
 @Component({
   selector: 'app-login',
@@ -17,6 +18,7 @@ import Swal from "sweetalert2";
   imports: [
     CommonModule,
     FormsModule,
+    NavbarSuperiorComponent
   ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'

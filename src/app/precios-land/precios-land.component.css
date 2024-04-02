@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+.app-layout {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  padding: 10px;
+}
+
+.app-layout app-navbar-lateral {
+  flex: 0 0 16%;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-layout .contenedor {
+  flex-grow: 1;
+}
+
+.contenedor {
+  height: 100vh;
+  padding: 40px;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.titulos {
+  margin-bottom: 20px;
+  display: flex;
+  width: 100%;
+}
+
+.titleColor {
+  color: #56bb91;
+  margin-left: 20px;
+}
+
+.pricingPage {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+.pricingOption {
+  background: #1e1e1e;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 10px;
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pricingOption.highlight {
+  border-color: #4caf50;
+}
+
+.price {
+  color: #fff;
+  margin: 0;
+  font-size: 32pt;
+  font-weight: 400;
+}
+
+.planName {
+  color: #fff;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #444;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Asegura que los elementos hijos se distribuyan comenzando por el principio y final del contenedor */
+  height: 100%; /* O define una altura específica si es necesario */
+}
+
+.subscribeButton {
+  align-self: center; /* Centra el botón horizontalmente */
+  background-color: #2d9c71;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 60%;
+  font-size: 14pt;
+  /* margin: 0 auto; No necesario con flexbox */
+  margin-top: auto; /* Empuja el botón hacia abajo */
+}
+
+
+.parrafo {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto; /* Para Safari */
+  -moz-hyphens: auto; /* Para Firefox */
+  -ms-hyphens: auto; /* Para Internet Explorer/Edge */
+  color: #3fbfa0;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+/* Agrega estilos para la responsividad si es necesario */
+@media (max-width: 768px) {
+  .pricingPage {
+    flex-direction: column;
+  }
+
+  .pricingOption {
+    margin-bottom: 20px;
+  }
+  
+  .app-layout {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .app-layout app-navbar-lateral {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  .app-layout .contenedor {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .titulos {
+    flex-direction: column;
+    text-align: left;
+    margin-top: 30px;
+  }
+
+  .titleColor {
+    margin-left: 0;
+    margin-top: -20px;
+  }
+
+  .plans{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}

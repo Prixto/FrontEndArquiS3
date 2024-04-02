@@ -13,17 +13,17 @@
             <h3>Menu</h3>
         </div>
 
-        <div class="blockLink" routerLink="/home">
+        <div class="blockLink" class="blockLink" [class.active]="currentRoute === '/home'" routerLink="/home">
             <img src="../../assets/Img/Navbar/hogar.png" alt="Dashboard" class="icon">
             <li>Home</li>
         </div>
 
-        <div class="blockLink" routerLink="/perfil">
+        <div class="blockLink" class="blockLink" [class.active]="currentRoute === '/perfil'" class="blockLink" routerLink="/perfil">
             <img src="../../assets/Img/Navbar/empresario.png" alt="Dashboard" class="icon">
             <li>Perfil</li>
         </div>
 
-        <div class="blockLink" routerLink="/precios">
+        <div class="blockLink" class="blockLink" [class.active]="currentRoute === '/precios'" class="blockLink" routerLink="/precios">
             <img src="../../assets/Img/Navbar/lista-de-precios.png" alt="Dashboard" class="icon">
             <li>Planes</li>
         </div>
@@ -32,32 +32,32 @@
             <h3>Servicios</h3>
         </div>
 
-        <div class="blockLink" routerLink="/empleados">
+        <div class="blockLink" class="blockLink" [class.active]="currentRoute === '/empleados'" class="blockLink" routerLink="/empleados">
             <img src="../../assets/Img/Navbar/empleo.png" alt="Dashboard" class="icon">
             <li>Empleados</li>
         </div>
 
-        <div class="blockLink" routerLink="/analisis">
+        <div class="blockLink" class="blockLink" [class.active]="currentRoute === '/analisis'" class="blockLink" routerLink="/analisis">
             <img src="../../assets/Img/Navbar/investigacion.png" alt="Dashboard" class="icon">
             <li>Análisis</li>
         </div>
 
-        <div class="blockLink" routerLink="/inventario">
+        <div class="blockLink" class="blockLink" [class.active]="currentRoute === '/inventario'" class="blockLink" routerLink="/inventario">
             <img src="../../assets/Img/Navbar/inventario.png" alt="Dashboard" class="icon">
             <li>Inventario</li>
         </div>
 
-        <div class="blockLink" routerLink="/nomina">
+        <div class="blockLink" class="blockLink" [class.active]="currentRoute === '/nomina'" class="blockLink" routerLink="/nomina">
             <img src="../../assets/Img/Navbar/presupuesto.png" alt="Dashboard" class="icon">
             <li>Nómina</li>
         </div>
 
-        <div class="blockLink" routerLink="/ventas">
+        <div class="blockLink" class="blockLink" [class.active]="currentRoute === '/ventas'" class="blockLink" routerLink="/ventas">
             <img src="../../assets/Img/Navbar/ventas.png" alt="Dashboard" class="icon">
             <li>Ventas</li>
         </div>
 
-        <div class="blockLink" routerLink="/gestioncontable">
+        <div class="blockLink" class="blockLink" [class.active]="currentRoute === '/gestioncontable'" class="blockLink" routerLink="/gestioncontable">
             <img src="../../assets/Img/Navbar/administracion.png" alt="Dashboard" class="icon">
             <li>Gestión Contable</li>
         </div>

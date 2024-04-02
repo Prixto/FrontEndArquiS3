@@ -108,6 +108,12 @@ li {
   z-index: 1050;
 }
 
+.blockLink.active {
+  background-color: #82d3af; /* Color de fondo para el enlace activo */
+  border-left: 4px solid #15503c; /* Borde izquierdo como indicador activo */
+}
+
+
 /* Estilos para móviles */
 @media (max-width: 768px) {
 

@@ -13,6 +13,8 @@ import { PerfilComponent } from './perfil/perfil.component';
 import { PreciosComponent } from './precios/precios.component';
 import { VentasComponent } from './ventas/ventas.component';
 import { PasarelaPagosComponent } from './pasarela-pagos/pasarela-pagos.component';
+import { PreciosLandComponent } from './precios-land/precios-land.component';
+import { NosotrosComponent } from './nosotros/nosotros.component';
 
 export const routes: Routes = [
 
@@ -60,6 +62,12 @@ export const routes: Routes = [
     ,
     {
         path: 'pasarela-pagos', component: PasarelaPagosComponent
+    },
+    {
+        path: 'preciosL', component: PreciosLandComponent
+    },
+    {
+        path: 'nosotros', component: NosotrosComponent
     }
     
 ];

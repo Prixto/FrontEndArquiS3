@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { NavbarSuperiorComponent } from '../navbar-superior/navbar-superior.component';
 
@@ -9,7 +9,8 @@ import { NavbarSuperiorComponent } from '../navbar-superior/navbar-superior.comp
   imports: [
     CommonModule,
     RouterOutlet,
-    NavbarSuperiorComponent
+    NavbarSuperiorComponent,
+    RouterLink
   ],
   templateUrl: './land-page.component.html',
   styleUrl: './land-page.component.css'
