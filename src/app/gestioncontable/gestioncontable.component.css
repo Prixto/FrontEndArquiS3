@@ -1,0 +1,102 @@
+.app-layout {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding: 10px;
+}
+
+.app-layout app-navbar-lateral {
+    flex: 0 0 16%;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-layout .contenedor {
+    flex-grow: 1;
+}
+
+.contenedor {
+    height: 100vh;
+    padding: 40px;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.titulos {
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+}
+
+.titleColor {
+    color: #56bb91;
+    margin-left: 20px;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.subscribeButton {
+    margin-top: auto;
+    background-color: #3ec0a0;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 45%;
+    font-size: 14pt;
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .app-layout {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .app-layout app-navbar-lateral {
+        width: 100%;
+        flex: 0 0 auto;
+    }
+
+    .app-layout .contenedor {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .Blocks a,
+    .contenedor-grafico {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+
+    .graficos-contenedor {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contenedor-grafico {
+        height: auto;
+    }
+
+    .titulos {
+        flex-direction: column;
+        text-align: left;
+        margin-top: 40px;
+    }
+
+    .titleColor {
+        margin-left: 0;
+        margin-top: -20px;
+    }
+
+    
+}
