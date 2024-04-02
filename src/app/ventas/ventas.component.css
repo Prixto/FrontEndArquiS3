@@ -137,7 +137,11 @@ h1 {
         margin-top: -20px;
     }
 
-    .Blocks {
-        margin-bottom: 40px;
+    .contenedor-reportes {
+        width: 100%;
+    }
+
+    .contenedor-tarjetas {
+        width: 100%;
     }
 }
