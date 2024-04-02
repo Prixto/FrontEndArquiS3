@@ -101,8 +101,8 @@ h1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #4f46e5;
-  color: #4f46e5;
+  border: 2px solid #2d9c71;
+  color: #2d9c71;
   width: 80px;
   height: 80px;
   border-radius: 0.5rem;
@@ -118,7 +118,7 @@ h1 {
 }*/
 
 .renew-button {
-  background-color: #4f46e5;
+  background-color: #2d9c71;
   color: white;
   padding: 0.75rem 1.5rem;
   border: none;

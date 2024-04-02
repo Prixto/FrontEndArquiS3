@@ -78,18 +78,27 @@ h1 {
   border-bottom: 1px solid #444;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Asegura que los elementos hijos se distribuyan comenzando por el principio y final del contenedor */
+  height: 100%; /* O define una altura específica si es necesario */
+}
+
 .subscribeButton {
-  margin-top: auto;
-  background-color: #3ec0a0;
-  color: #000;
+  align-self: center; /* Centra el botón horizontalmente */
+  background-color: #2d9c71;
+  color: #fff;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px;
   width: 60%;
   font-size: 14pt;
-  margin: 0 auto;
+  /* margin: 0 auto; No necesario con flexbox */
+  margin-top: auto; /* Empuja el botón hacia abajo */
 }
+
 
 .parrafo {
   text-align: justify;

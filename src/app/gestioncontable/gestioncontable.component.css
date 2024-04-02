@@ -40,20 +40,23 @@ h1 {
 .botones {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .subscribeButton {
     margin-top: auto;
-    background-color: #3ec0a0;
-    color: #000;
+    background-color: #2d9c71;
+    color: #fff;
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    width: 45%;
+    width: 55%;
     font-size: 14pt;
     margin: 0 auto;
-    font-weight: 500;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
