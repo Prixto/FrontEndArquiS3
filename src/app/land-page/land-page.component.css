@@ -63,7 +63,7 @@ h1 {
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px;
-  width: 350px ;
+  width: 350px;
   font-size: 14pt;
 }
 
@@ -125,14 +125,28 @@ h1 {
     text-align: center;
   }
 
+  .area-principal{
+    margin-top: 50px;
+  }
+
   .area-principal,
-  .area-visual {
+  .area-visual,
+  .texto-secundario {
+    width: 100%;
     flex-basis: 100%;
   }
 
-  .area-principal h1 {
-    font-size: 1.5rem;
-    /* Ajusta el tamaño del texto para pantallas más pequeñas */
+  .area-principal {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .area-visual {
+    order: 2;
+  }
+
+  .texto-secundario {
+    order: 3;
   }
 
 
