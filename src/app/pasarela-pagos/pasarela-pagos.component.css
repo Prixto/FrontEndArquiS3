@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+.app-layout {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  padding: 10px;
+}
+
+.app-layout app-navbar-lateral {
+  flex: 0 0 16%;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-layout .contenedor {
+  flex-grow: 1;
+}
+
+.contenedor {
+  height: 100vh;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.titulos {
+  margin-bottom: 20px;
+  display: flex;
+  width: 100%;
+}
+
+.titleColor {
+  color: #56bb91;
+  margin-left: 10px;
+}
+
+.payment-container {
+  max-width: 600px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  margin: 0 auto;
+}
+
+.payment-amount h1 {
+  text-align: center;
+  color: #333;
+}
+
+.order-detail {
+  background: none;
+  color: #2d9c71;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  display: block;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.payment-method {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.payment-icon {
+  height: 30px;
+  margin-left: 10px;
+}
+
+.payment-method label {
+  margin-right: auto;
+}
+
+.payment-method input[type="radio"] {
+  margin-right: 10px;
+}
+
+.payment-form label {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.payment-form input[type="text"] {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.payment-form input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.save-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.pse-info {
+  font-size: 0.8em;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.place-order {
+  background: #2d9c71;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+.place-order:hover {
+  background: #0056b3;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Espacio entre los grupos de input */
+  margin-bottom: 15px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: calc(
+    50% - 5px
+  ); /* Restamos el gap dividido entre 2 para el cálculo del ancho */
+}
+
+.input-wrapper label {
+  margin-bottom: 5px;
+}
+
+.input-wrapper input[type="text"] {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+/* Agrega estilos para la responsividad si es necesario */
+@media (max-width: 768px) {
+  .pricingPage {
+    flex-direction: column;
+  }
+
+  .pricingOption {
+    margin-bottom: 20px;
+  }
+
+  .app-layout {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .app-layout app-navbar-lateral {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  .app-layout .contenedor {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .titulos {
+    flex-direction: column;
+    text-align: left;
+    margin-top: 30px;
+  }
+
+  .titleColor {
+    margin-left: 0;
+    margin-top: -20px;
+  }
+
+  .payment-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .input-row {
+    flex-direction: column;
+  }
+
+  .input-wrapper {
+    width: 100%;
+  }
+}

@@ -1,0 +1,147 @@
+.app-layout {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding: 10px;
+}
+
+.app-layout app-navbar-lateral {
+    flex: 0 0 16%;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-layout .contenedor {
+    flex-grow: 1;
+}
+
+.contenedor {
+    height: 100vh;
+    padding: 40px;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.titulos {
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+}
+
+.titleColor {
+    color: #56bb91;
+    margin-left: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten según el tamaño de pantalla */
+}
+
+.contenedor-reportes {
+    width: 70%; /* Ocupa el 50% del espacio disponible */
+    padding: 10px; /* Espacio alrededor de los reportes */
+}
+
+.contenedor-tarjetas {
+    width: 30%;
+    display: flex;
+    flex-direction: column; /* Organiza las tarjetas en columna */
+    justify-content: flex-start; /* Alinea las tarjetas al inicio de la columna */
+    padding: 10px; /* Espacio alrededor de las tarjetas */
+}
+
+/* Asegúrate de ajustar el tamaño de tus tarjetas pequeñas para que encajen bien */
+.contenedor-reportes a{
+    padding: 20px;
+    height: auto;
+}
+
+.contenedor-tarjetas a{
+    margin-bottom: 50px;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+}
+.form-control label {
+    display: block;
+    margin-bottom: .5rem;
+}
+.form-control input,
+.form-control textarea {
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid #ccc;
+    border-radius: .25rem;
+}
+
+.subscribeButton {
+    margin-top: auto;
+    background-color: #2d9c71;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 60%;
+    font-size: 14pt;
+    margin: 0 auto;
+  }
+  
+
+
+@media (max-width: 768px) {
+    .app-layout {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .app-layout app-navbar-lateral {
+        width: 100%;
+        flex: 0 0 auto;
+    }
+
+    .app-layout .contenedor {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .Blocks a,
+    .contenedor-grafico {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+
+    .graficos-contenedor {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contenedor-grafico {
+        height: auto;
+    }
+
+    .titulos {
+        flex-direction: column;
+        text-align: left;
+        margin-top: 40px;
+    }
+
+    .titleColor {
+        margin-left: 0;
+        margin-top: -20px;
+    }
+
+    .contenedor-reportes {
+        width: 100%;
+    }
+
+    .contenedor-tarjetas {
+        width: 100%;
+    }
+}

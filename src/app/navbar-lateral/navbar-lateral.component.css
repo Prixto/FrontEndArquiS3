@@ -1,48 +1,56 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-
 .navbar {
-  width: 100%;
-  height: 90vh;
-  border-radius: 15px;
+  width: 17%;
+  height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
+  text-align: center;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* si hago scroll, el navbar se queda fijo */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  background-color: #fff;
 }
 
 .sidebar-header {
-  font-size: 12pt;
-  margin-bottom: 10px;
-  font-weight: bold;
+  font-weight: 900;
   width: 100%;
   color: #414141;
   text-align: left;
   font-family: "Montserrat", sans-serif;
 }
 
-.titulo-header {
-  font-size: 14pt;
+.titulo-header h3 {
+  font-size: 18pt;
   width: 100%;
-  font-style: italic;
-  border-bottom: 1px solid #56bb91;
-  padding-bottom: 5px;
   color: #56bb91;
+  font-style: italic !important;
+  font-weight: bold !important;
+  border-bottom: 2px solid #56bb91;
+  padding-bottom: 10px;
 }
 
 .servicios-header {
   margin-top: 20px;
 }
 
+.sidebar-header h3 {
+  font-size: 14pt;
+}
+
+.servicios-header h3 {
+  font-size: 14pt;
+  font-weight: 600;
+}
+
 .nav-links {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   flex-grow: 1;
   overflow-y: auto;
@@ -69,7 +77,6 @@ li {
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
   padding-left: 20px;
   cursor: pointer;
 }
@@ -96,10 +103,16 @@ li {
 .hamburger {
   display: none;
   cursor: pointer;
-  font-size: 28pt; /* Ajusta esto según tus necesidades */
+  font-size: 28pt;
   position: fixed;
-  z-index: 1050; /* Asegura que el ícono esté sobre otros contenidos */
+  z-index: 1050;
 }
+
+.blockLink.active {
+  background-color: #82d3af; /* Color de fondo para el enlace activo */
+  border-left: 4px solid #15503c; /* Borde izquierdo como indicador activo */
+}
+
 
 /* Estilos para móviles */
 @media (max-width: 768px) {
@@ -112,37 +125,37 @@ li {
     left: 0;
     z-index: 1001;
     box-shadow: none;
+    background-color: transparent; 
   }
 
   .hamburger {
     display: block;
     z-index: 1002;
-    position: fixed; /* Asegura que el ícono se posicione en relación con la ventana del navegador */
+    position: fixed;
     top: 0;
-    left: 0; /* Cambia esto de right: 0; a left: 0; */
-    padding: 10px; /* Añade un poco de padding para que no esté justo en el borde */
+    left: 0;
+    padding: 10px;
     margin-left: 10px;
   }
-  
+
 
   .nav-links {
-    margin-top: 10px;
     display: none;
     position: fixed;
     padding: 50px;
     top: 0;
     left: 0;
-    width: 60%; /* Ajusta al 100% del ancho de la pantalla */
-    height: 100vh; /* Ocupa toda la altura de la pantalla */
-    min-height: 100vh; /* Asegura que el menú tenga al menos la altura de la pantalla */
+    width: 80%;
+    min-height: 100vh;
+    height: 100vh;
     flex-direction: column;
-    background-color: #fff; /* O el color que prefieras */
+    background-color: #fff;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1000; /* Asegura que el menú esté sobre otros contenidos, pero debajo de la hamburguesa */
+    z-index: 1000;
   }
 
   .nav-links.active {
-    display: flex; /* Muestra el menú cuando está activo */
+    display: flex;
   }
 
 }

@@ -1,1 +1,28 @@
-<p>inventario works!</p>
+<div class="app-layout" id="app-layout">
+    <app-navbar-lateral></app-navbar-lateral>
+    <div class="contenedor">
+        <div class="titulos">
+            <h1>Listado del</h1>
+            <h1 class="titleColor">Inventario</h1>
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="Buscar producto" [(ngModel)]="busqueda" />
+        </div>
+
+        <div class="blockCards">
+            <div *ngFor="let producto of productosFiltrados" class="card">
+                <img [src]="producto.imagenURL" />
+                <div>
+                    <h2>{{ producto.nombre }}</h2>
+                    <h3>Precio: {{ producto.precio }}</h3>
+                    <h3>Stock: {{ producto.cantidad }}</h3>
+                    <button >Mostrar más</button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>

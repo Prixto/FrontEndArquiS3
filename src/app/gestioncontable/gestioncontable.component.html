@@ -1,1 +1,69 @@
-<p>gestioncontable works!</p>
+<div class="app-layout">
+    <app-navbar-lateral></app-navbar-lateral>
+    <div class="contenedor">
+
+        <div class="titulos">
+            <h1>Gestión</h1>
+            <h1 class="titleColor">Contable</h1>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+            <!-- Bloque para Reportes para Impuestos -->
+            <div
+                class="block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Reportes para Impuestos
+                </h5>
+                <div class="botones">
+
+                    <button class="subscribeButton" routerLink="/pasarela-pagos">
+                        Generar Reporte de IVA
+                    </button>
+
+                    <button class="subscribeButton" routerLink="/pasarela-pagos">
+                        Generar Reporte de ISR
+                    </button>
+                </div>
+            </div>
+
+            <!-- Bloque para Actualizaciones de Legislación -->
+            <div
+                class="block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Últimas Actualizaciones
+                    de Legislación</h5>
+                <ul class="list-disc pl-5">
+                    <li class="mb-2">Cambio en las tasas de IVA aplicables desde Julio 2024</li>
+                    <li class="mb-2">Actualización en la normativa de deducciones fiscales para pequeños negocios</li>
+                </ul>
+            </div>
+
+            <!-- Bloque para Registro de Auditoría -->
+            <div
+                class="block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Registro de Auditoría
+                </h5>
+                <ul class="list-disc pl-5">
+                    <li class="mb-2">2024-03-30 10:00: Registro de venta #1023 por Usuario1</li>
+                    <li class="mb-2">2024-03-30 11:00: Modificación de inventario por Usuario2</li>
+                </ul>
+            </div>
+
+            <a class="block col-span-1 md:col-span-2 lg:col-span-3 p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+            style="height: auto;">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Flujo de caja</h5>
+            
+                <div class="graficos-contenedor">
+                    <div class="contenedor-grafico">
+                        <canvas id="miGrafico"></canvas>
+                    </div>
+            
+                    <div class="contenedor-grafico">
+                        <canvas id="miGrafico1"></canvas>
+                    </div>
+                </div>
+            </a>
+            
+
+        </div>
+    </div>
+</div>

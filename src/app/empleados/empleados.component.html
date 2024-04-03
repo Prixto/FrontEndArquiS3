@@ -1,1 +1,30 @@
-<p>empleados works!</p>
+<div class="app-layout" id="app-layout">
+    <app-navbar-lateral></app-navbar-lateral>
+    <div class="contenedor">
+        <div class="titulos">
+            <h1>Lista de</h1>
+            <h1 class="titleColor">Empleados</h1>
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="Buscar producto" [(ngModel)]="busqueda" />
+        </div>
+
+        <div class="blockCards">
+            <div *ngFor="let empleado of empleadosFiltrados" class="card">
+                <img [src]="empleado.imagenURL" />
+                <div>
+                    <h2>{{ empleado.nombre }} {{ empleado.apellido }}</h2>
+                    <h3>{{ empleado.cargo }}</h3>
+                    <nav class="buttons">
+                        <button class="primary">Mostrar más</button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</div>
